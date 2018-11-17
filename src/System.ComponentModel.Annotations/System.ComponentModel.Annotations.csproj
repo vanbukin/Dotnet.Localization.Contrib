@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+    <LangVersion>7.3</LangVersion>
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <RootNamespace>FxResources.System.ComponentModel.Annotations</RootNamespace>
+    <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <NoWarn>$(NoWarn);NU5125</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="SR.resx" />
+    <EmbeddedResource Include="SR.ru-RU.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NuGet.CommandLine" Version="4.7.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>
